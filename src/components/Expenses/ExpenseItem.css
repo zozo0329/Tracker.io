@@ -1,0 +1,32 @@
+.Expense-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #2b2b2b;
+  color: white;
+  font-family: monospace, sans-serif;
+  padding: 10px;
+}
+.Expense-item-container * {
+  padding: 10px;
+}
+.date-container {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+.title-container h1 {
+  font-size: 23px;
+}
+.amount-container {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  border: none;
+}
+.amount-container p {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px 0px 10px 0px;
+}
