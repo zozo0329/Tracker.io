@@ -1,5 +1,6 @@
 import "./App.css";
 import Expenses from "./components/Expenses/Expenses";
+import NewExpenses from "./components/NewExpenses/NewExpenses";
 function App() {
   const dummyExpenses = [
     {
@@ -23,10 +24,16 @@ function App() {
       date: new Date(2024, 1, 1),
     },
   ];
+  const objectHandler = (objectData) => {
+    console.log(objectData, "APP JSX");
+  };
 
   return (
     <div className="App">
-      <div>
+      <div className="form-container">
+        <NewExpenses onShit={objectHandler} />
+      </div>
+      <div className="expenses-container">
         <Expenses dummyExpenses={dummyExpenses} />
       </div>
     </div>
