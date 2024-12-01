@@ -21,8 +21,24 @@
   border: none;
   border-bottom: 3px solid white;
   font-size: 18px;
+  font-weight: bold;
   padding: 5px;
+  letter-spacing: 2px;
 }
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.6;
+  filter: invert(0.7);
+}
+
 input:focus {
   outline: none;
 }
