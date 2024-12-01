@@ -6,7 +6,7 @@ const NewExpenses = (props) => {
       ...userObject,
       id: Math.random().toString(),
     };
-    props.onShit(userDataObject);
+    props.dataFuntion(userDataObject);
   };
   return (
     <div className="new-expenses-container">
