@@ -56,3 +56,10 @@ input:focus {
 .user-action button:active {
   background-color: #b4b4b4;
 }
+@media (max-width: 850px) {
+  .user-input {
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+}

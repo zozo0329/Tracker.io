@@ -1,32 +1,67 @@
 .Expense-item-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   background-color: #2b2b2b;
   color: white;
   font-family: monospace, sans-serif;
-  padding: 10px;
+  padding: 20px;
 }
-.Expense-item-container * {
-  padding: 10px;
+.date-title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
 }
 .date-container {
   background-color: white;
   color: black;
   border-radius: 10px;
+  width: 150px;
+}
+.title-container {
+  width: 250px;
 }
 .title-container h1 {
+  text-align: start;
   font-size: 23px;
+  margin: 0px;
+  padding: 0px;
 }
 .amount-container {
   background-color: white;
   color: black;
   border-radius: 10px;
   border: none;
+  padding: 10px;
 }
 .amount-container p {
   font-weight: bold;
   font-size: 20px;
   margin: 10px 0px 10px 0px;
+}
+@media (max-width: 1030px) {
+  .Expense-item-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .date-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .date-container {
+    margin: 0px;
+    width: 120px;
+  }
+  .title-container h1 {
+    text-align: center;
+  }
+  .amount-container {
+    padding: 5px 10px 5px 10px;
+  }
 }

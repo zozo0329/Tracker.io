@@ -6,11 +6,13 @@ const ExpensesItem = (props) => {
 
   return (
     <div className="Expense-item-container">
-      <div className="date-container ">
-        <ExpenseDate date={date} />
-      </div>
-      <div className="title-container">
-        <h1>{props.title}</h1>
+      <div className="date-title-container">
+        <div className="date-container ">
+          <ExpenseDate date={date} />
+        </div>
+        <div className="title-container">
+          <h1>{props.title}</h1>
+        </div>
       </div>
       <div className="amount-container">
         <p>${props.amount}</p>

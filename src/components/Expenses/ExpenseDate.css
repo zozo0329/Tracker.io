@@ -1,5 +1,9 @@
 .date-container {
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
 }
 .date-container h2 {
   margin: 0px;
