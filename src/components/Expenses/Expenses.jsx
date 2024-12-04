@@ -9,11 +9,13 @@ const Expenses = (props) => {
   const dataHandler = (filterValue) => {
     setFilteredYear(filterValue);
   };
-
+  const filteredExpenses = objectValue.filter((expense) => {
+    return expense.date.getFullYear().toString() === filteredYear;
+  });
   return (
     <Card className="expense-item-container">
       <Filter defaultFilterValue={filteredYear} onChangeFilter={dataHandler} />
-      {objectValue.map((value) => {
+      {filteredExpenses.map((value) => {
         return (
           <ExpenseItem
             key={value.id}
