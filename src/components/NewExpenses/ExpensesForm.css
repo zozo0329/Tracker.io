@@ -12,6 +12,7 @@
   gap: 40px;
   background-color: #2b2b2b;
   padding: 50px;
+  border-radius: 10px;
 }
 .user-input {
   display: flex;
@@ -53,7 +54,7 @@ input:focus {
   cursor: pointer;
 }
 .user-action button:hover {
-  background-color: #cecece;
+  background-color: #c0c0c0;
 }
 .user-action button:active {
   background-color: #b4b4b4;
