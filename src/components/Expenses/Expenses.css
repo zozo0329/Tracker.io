@@ -3,8 +3,13 @@
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  margin: 20px 200px 20px 200px;
+  margin: 20px 320px 20px 320px;
   padding: 30px;
   background-color: black;
   color: white;
+}
+@media (max-width: 1030px) {
+  .expense-item-container {
+    margin: 20px 150px 20px 150px;
+  }
 }

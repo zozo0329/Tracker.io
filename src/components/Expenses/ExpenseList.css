@@ -1,6 +1,8 @@
 .expense-list-container h2 {
   font-family: monospace, sans-serif;
+  font-size: 20px;
   text-align: center;
+  font-weight: normal;
 }
 .expense-list-container {
   display: flex;
