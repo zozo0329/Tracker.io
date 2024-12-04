@@ -2,3 +2,8 @@
   font-family: monospace, sans-serif;
   text-align: center;
 }
+.expense-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

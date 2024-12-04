@@ -4,10 +4,10 @@ import ExpensesItem from "./ExpenseItem";
 const ExpenseList = (props) => {
   return (
     <div className="expense-list-container">
-      {props.filterer.length === 0 ? (
+      {props.filteredExp.length === 0 ? (
         <h2>No Expense Found</h2>
       ) : (
-        props.filterer.map((value) => {
+        props.filteredExp.map((value) => {
           return (
             <ExpensesItem
               key={value.id}

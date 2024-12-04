@@ -27,7 +27,7 @@ const Expenses = (props) => {
   return (
     <Card className="expense-item-container">
       <Filter defaultFilterValue={filteredYear} onChangeFilter={dataHandler} />
-      <ExpenseList filterer={filteredExpenses} />
+      <ExpenseList filteredExp={filteredExpenses} />
     </Card>
   );
 };
