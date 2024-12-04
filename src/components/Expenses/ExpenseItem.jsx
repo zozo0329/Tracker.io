@@ -15,7 +15,7 @@ const ExpensesItem = (props) => {
         </div>
       </div>
       <div className="amount-container">
-        <p>${props.amount}</p>
+        <p>₱ {props.amount}</p>
       </div>
     </div>
   );
