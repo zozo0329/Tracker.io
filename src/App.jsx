@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Expenses from "./components/Expenses/Expenses";
 import NewExpenses from "./components/NewExpenses/NewExpenses";
+import Header from "./components/Header/Header";
 const dummyExpenses = [
   {
     title: "Car Insurance",
@@ -35,6 +36,9 @@ function App() {
 
   return (
     <div className="App">
+      <div className="header-container">
+        <Header />
+      </div>
       <div className="form-container">
         <NewExpenses dataFuntion={objectHandler} />
       </div>
