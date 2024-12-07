@@ -9,3 +9,12 @@
   margin: 0px;
   padding: 0px;
 }
+.date-container .day {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: monospace, sans-serif;
+}
+
+.date-container .month {
+  font-family: sans-serif, monospace;
+}
