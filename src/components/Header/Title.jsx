@@ -4,13 +4,19 @@ const Title = () => {
   return (
     <div className="title--container">
       <div className="logo">
-        <img src="#" alt="Logo-image" />
+        <h1>Expense Tracker</h1>
       </div>
       <div className="nav">
         <ul>
-          <li>Title</li>
-          <li>Title</li>
-          <li>Title</li>
+          <a href="#/" target="_blank">
+            <li>Sample</li>
+          </a>
+          <a href="/" target="_blank">
+            <li>Sample</li>
+          </a>
+          <a href="/" target="_blank">
+            <li>Sample</li>
+          </a>
         </ul>
       </div>
     </div>

@@ -7,6 +7,17 @@
   width: 100%;
   height: 60px;
 }
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.logo h1 {
+  font-size: 20px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
 .title--container ul {
   display: flex;
   justify-content: center;
@@ -16,6 +27,18 @@
 }
 ul li {
   list-style-type: none;
-  font-size: 20px;
+  font-size: 15px;
+  font-weight: bold;
   cursor: pointer;
+  font-family: sans-serif;
+}
+ul a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s;
+}
+ul a:hover {
+  color: #b9b9b9;
+  transform: scale(1.2);
+  border-bottom: 1px solid #b9b9b9;
 }
