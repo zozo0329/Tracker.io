@@ -3,30 +3,30 @@ import "./App.css";
 import Expenses from "./components/Expenses/Expenses";
 import NewExpenses from "./components/NewExpenses/NewExpenses";
 import Header from "./components/Header/Header";
-const dummyExpenses = [
-  {
-    title: "Car Insurance",
-    amount: 2000.0,
-    date: new Date(2024, 2, 10),
-  },
-  {
-    title: "Toilet Paper",
-    amount: 25.55,
-    date: new Date(2023, 4, 11),
-  },
-  {
-    title: "Groceries",
-    amount: 2500.24,
-    date: new Date(2023, 4, 5),
-  },
-  {
-    title: "Book",
-    amount: 500,
-    date: new Date(2024, 1, 1),
-  },
-];
+// const dummyExpenses = [
+//   {
+//     title: "Car Insurance",
+//     amount: 2000.0,
+//     date: new Date(2024, 2, 10),
+//   },
+//   {
+//     title: "Toilet Paper",
+//     amount: 25.55,
+//     date: new Date(2023, 4, 11),
+//   },
+//   {
+//     title: "Groceries",
+//     amount: 2500.24,
+//     date: new Date(2023, 4, 5),
+//   },
+//   {
+//     title: "Book",
+//     amount: 500,
+//     date: new Date(2024, 1, 1),
+//   },
+// ];
 function App() {
-  const [expenses, setExpenses] = useState(dummyExpenses);
+  const [expenses, setExpenses] = useState([]);
   const objectHandler = (objectContainer) => {
     // REVIEW THIS PART
     setExpenses((prevExpense) => {
