@@ -45,6 +45,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 input:focus {
   outline: none;
 }
+.user-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 .user-action button {
   font-size: 18px;
   font-weight: bold;
@@ -52,6 +58,7 @@ input:focus {
   border-radius: 10px;
   transition: all 0.5s;
   cursor: pointer;
+  width: 150px;
 }
 .user-action button:hover {
   background-color: #c0c0c0;
