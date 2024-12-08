@@ -3,6 +3,7 @@ import "./App.css";
 import Expenses from "./components/Expenses/Expenses";
 import NewExpenses from "./components/NewExpenses/NewExpenses";
 import Header from "./components/Header/Header";
+import AddButton from "./components/Open/AddButton";
 // const dummyExpenses = [
 //   {
 //     title: "Car Insurance",
@@ -27,6 +28,7 @@ import Header from "./components/Header/Header";
 // ];
 function App() {
   const [expenses, setExpenses] = useState([]);
+  const [isShow, setIsShow] = useState(false);
   const objectHandler = (objectContainer) => {
     // REVIEW THIS PART
     setExpenses((prevExpense) => {
@@ -40,7 +42,9 @@ function App() {
         <Header />
       </div>
       <div className="form-container">
-        <NewExpenses dataFuntion={objectHandler} />
+        <AddButton isShow={isShow} setIsShow={setIsShow}>
+          <NewExpenses dataFuntion={objectHandler} setIsShow={setIsShow} />
+        </AddButton>
       </div>
       <div className="expenses-container">
         <Expenses item={expenses} />

@@ -1,5 +1,6 @@
 import "./NewExpenses.css";
-import Form from "./ExpensesForm";
+import ExpenseForm from "./ExpensesForm";
+
 const NewExpenses = (props) => {
   const dataHandler = (userObject) => {
     const userDataObject = {
@@ -10,7 +11,7 @@ const NewExpenses = (props) => {
   };
   return (
     <div className="new-expenses-container">
-      <Form onUserData={dataHandler} />
+      <ExpenseForm setIsShow={props.setIsShow} onUserData={dataHandler} />
     </div>
   );
 };
